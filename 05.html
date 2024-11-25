@@ -11,7 +11,8 @@
 
     //PROCESSAMENTO
     for (let nome of listaDeNomes) {
-        if (nome.charAt == "A" || nome.charAt == "E" || nome.charAt == "I" || nome.charAt == "O" || nome.charAt == "U") {
+        let letra = nome.charAt(0);
+        if (["A", "E", "I", "O", "U"].includes(letra)) {
             vogal.push(nome);
         }
     }
@@ -20,6 +21,6 @@
     //SAÍDA
     document.write("Nomes que começam com vogal: " + vogal.join(", "));
 
-    //Revisar.
+    //Feito.
 
 </script>

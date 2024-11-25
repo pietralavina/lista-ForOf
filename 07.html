@@ -7,13 +7,19 @@
 
     //ENTRADA
     let listaDeNumeros = [1, 2.5, -3, 4, 8.9, 4.789, -25.6, 42];
-    let inteiros = [];
-    let positivos = [];
-
+    let inteirosPositivos = [];
 
     //PROCESSAMENTO
-
+    for (let numero of listaDeNumeros) {
+        if (Number.isInteger(numero) && numero > 0) {
+            inteirosPositivos.push(numero);
+        }
+    }
 
     //SAÍDA
+    document.write("Lista dos números inteiros positivos: " + inteirosPositivos.join(", ") + "<br>");
+    document.write("Quantidade de números encontrados: " + inteirosPositivos.length);
 
+    //Feito.
+    
 </script>
